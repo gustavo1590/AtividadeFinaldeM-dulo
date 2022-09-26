@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+    <main>
+      <body style="margin: 25px">
+        <h1>Meus Recados</h1>
+    
+        <div>
+          <form id="infos-prod">
+            <label for="descricao"></label>
+            <input
+              class="descricao"
+              type="text"
+              id="descricao"
+              name="descricao"
+              placeholder="Descrição"
+              required
+            />
+    
+            <label for="detalhamento"></label>
+            <input
+              class="detalhamento"
+              type="text"
+              id="detalhamento"
+              name="detalhamento"
+              placeholder="Detalhamento"
+              required
+            />
+    
+            <input type="submit" value="Salvar" />
+          </form>
+    
+          <div id="msg-erro"></div>
+        </div>
+    
+        <br /><br />
+    
+        <table>
+          <thead>
+            <tr>
+              <th id="tid">#</th>
+              <th id="tdescricao">Descrição</th>
+              <th id="tdetalhamento">Detalhamento</th>
+              <th id="tacoes">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+    </main> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="./js/transactions.js"></script>
+</body>
+</html>
